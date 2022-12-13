@@ -58,11 +58,30 @@ void cite()
 	cout << "交换后n2=" << n2 << endl;
 }
 
+int sum(int x = 0, int y = 0, int z = 0);
+
+//函数中的默认值
+void FuncDefault()
+{	
+	int a, b, c;
+	a = b = c = 2;
+	cout << "没有给参数时调用sum=" << sum() << endl;
+	cout << "sum("<<a<<","<<b<<","<<c<<")时sum=" << sum(a, b, c) << endl;
+	//注意事项：
+	//1.当给了一个参数默认值时其后的每一个参数也得给默认值
+	//2.函数的声明和初始化只能有一个可以用写默认值 
+	//一般定义不写默认值 声明写默认值
+}
 int main()
 {
 	//new_delete();
 	//cite();
-
+	FuncDefault();
 	
 	return 0;
+}
+
+int sum(int x, int y, int z)
+{
+	return x + y + z;
 }
