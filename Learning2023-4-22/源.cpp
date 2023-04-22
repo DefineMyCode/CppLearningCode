@@ -1,8 +1,12 @@
 #include <iostream>
 #include <string>
-
+#include <string>
 using namespace std;
-int i = 0, j = 2;
+
+//using std::cin;
+//using std::cout;
+//using std::endl;
+//int i = 0, j = 2;
 //struct Foo {    }
 //struct Sales_data {
 //	std::string book_name;
@@ -87,6 +91,14 @@ int main()
 	////不同auto解释为int decltype解释为int& 
 	//auto y2 = *p;decltype(*p) y3=i;
 	////。。。。。。
-	
+	//int i;
+	//cin >> i;
+	//cout << i << endl;
+	string word;
+	while (cin >> word)
+	{
+		cout << word << endl;
+	}
+
 	return 0;
 }
